@@ -55,7 +55,7 @@ import java.net.InetAddress;
 @Slf4j
 public class ServiceUtil {
     private final String port;
-    private final String serviceAddress;
+    private String serviceAddress;
 
     /**
      * Construtor
