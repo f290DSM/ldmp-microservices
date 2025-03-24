@@ -33,5 +33,21 @@ O cliente chama um Load Balancer que consulta o Service Registry e redireciona a
 
 ## Spring Boot e Eureka (Netflix Eureka)
 
-### To be continue...
+O **Eureka Server** é um serviço de descoberta (Service Discovery) da Netflix OSS, amplamente utilizado em arquiteturas de microsserviços com Spring Cloud. 
+Ele permite que serviços se registrem dinamicamente e descubram uns aos outros sem necessidade de configuração manual.
+
+### Como Funciona?
+#### Registro
+Os microsserviços clientes (Eureka Clients) se registram no Eureka Server.
+
+#### Descoberta
+Quando um serviço precisa chamar outro, ele consulta o Eureka Server para obter a localização do serviço desejado.
+
+#### Heartbeats
+Os clientes enviam sinais periódicos (heartbeats) para indicar que estão ativos.
+
+#### Remoção Automática
+Se um cliente parar de responder, o Eureka Server o remove da lista.
+
+
 
