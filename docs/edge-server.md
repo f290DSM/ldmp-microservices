@@ -160,15 +160,15 @@ Você precisará de 6 terminais em baerto para realizar os testes, então siga o
 ```
 4. Inicialize a **Primeira Instancia de Product Service**, no terceiro terminal, a partir da raiz do `product-service`;
 ```yml
-.\gradlew bootRun --args='server.port=8081'
+.\gradlew bootRun --args='--server.port=8081'
 ```
 5. Inicialize a **Segunda Instancia de Product Service**, no quarto terminal, a partir da raiz do `product-service`;
 ```yml
-.\gradlew bootRun --args='server.port=8082'
+.\gradlew bootRun --args='--server.port=8082'
 ```
 6. Inicialize a **Terceira Instancia de Product Service**, no quinto terminal, a partir da raiz do `product-service`;
 ```yml
-.\gradlew bootRun --args='server.port=8083'
+.\gradlew bootRun --args='--server.port=8083'
 ```
 
 ## Validando o balanceamento
